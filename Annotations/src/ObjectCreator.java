@@ -38,8 +38,7 @@ public class ObjectCreator {
 				Executar exec = method.getAnnotation(Executar.class);
 
 				/*
-				 * Invoca o método caso haja anotação e o elemento
-				 * "runOnInstantiation" for "true".
+				 * Invoca o método caso haja anotação e o elemento seja igual ao número randômico sorteado.
 				 */
 				if (exec != null && exec.numRandom() == NumeroRandom.getRandomInt()) {
 					method.invoke(obj);

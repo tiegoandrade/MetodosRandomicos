@@ -13,8 +13,6 @@ public class Teste {
 		System.out.println("m2 chamado");
 	}
 	
-	// Ao usar a reflexão para instanticar e chamar os métodos, esse método será
-	// chamado, passando como parâmetro o valor de arg.
 	@Executar(numRandom = 2)
 	public void m3() {
 		System.out.println("m3 chamado");
