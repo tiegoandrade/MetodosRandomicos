@@ -6,6 +6,7 @@ public class Teste {
 	@Executar(numRandom = 1)
 	public void m1() {
 		System.out.println("m1 chamado");
+		
 	}
 	
 	@Executar(numRandom = 3)

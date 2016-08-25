@@ -27,7 +27,9 @@ public class ObjectCreator {
 
 			/* Obtém um array com os métodos da classe. */
 			Method[] methods = clazz.getMethods();
-
+			
+			int random = 1 + (int) (Math.random() * 3);
+			
 			/* Itera sobre cada método da classe. */
 			for (Method method : methods) {
 
@@ -40,9 +42,11 @@ public class ObjectCreator {
 				/*
 				 * Invoca o método caso haja anotação e o elemento seja igual ao número randômico sorteado.
 				 */
-				if (exec != null && exec.numRandom() == NumeroRandom.getRandomInt()) {
+				if (exec != null && exec.numRandom() == random) {
 					method.invoke(obj);
+					
 				}
+				
 			}
 			
 			/* Retorna o objeto criado. */
